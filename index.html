@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crystal Collector</title>
+
+    <!-- use bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <!-- point to css file-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<!-- heading of pages -->>
+
+<body>
+    <div>
+        <h1 id="mainheader">Crystal Collector</h1>
+        <img id="headimg" src="assets/images/header gemstones.jpg" alt="crystals">
+    </div>
+
+    <!-- user directions-->
+    <div class="container">
+        <div class="row">
+            <p class="col-md-6">You will be given a random number at the start of the game.</p>
+        </div>
+        <div class="row">
+            <p class="col-md-6">There are four crystals below. By clicking on a crystal you will add a specific amount
+                of points to your total score.</p>
+        </div>
+        <div class="row">
+            <p class="col-md-6">You will win the game by matching your total score to a random number.
+                You lose the game if your total score oges above the random number.
+            </p>
+        </div>
+        <div class="row">
+            <p class="col-md-6">The value of each crystal is hidden from you until you
+                click on it.
+            </p>
+        </div>
+        <div class="row">
+            <p class="col-md-6">Each time when the game starts, the game will change
+                the values of each crystal.
+            </p>
+        </div>
+        <br>
+        <div class="card">
+            <div class="card-body">
+                <div class="col-md-6">
+                    <p> id="#matchRandomNumber"</p>
+                </div>
+                <div class="col-md-6">
+                    <p> id="#numWins"</p>
+                    <p> id="#numLosses"</p>
+                </div>
+            </div>
+        </div>
+        <div id="#crystals"></div>
+        <div>
+            <p> id="#yourScore"</p>
+        </div>
+    </div>
+
+    <!-- play game -->
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src"assets/javascript/game.js"> </script> <!--<script=type="text/javascript">-->
+</body>
+</html>
