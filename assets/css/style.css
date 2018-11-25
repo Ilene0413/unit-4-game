@@ -1,41 +1,53 @@
-<!-- CSS Styles (These styles are provided to you. Don't touch these!) -->
-  body {
-    background: url(Assets/fridge.png) no-repeat;
-  }
+/**
+    * Basic Portfolio stylesheet
+**/
 
-  .letter {
-    width: 30px;
-    height: 30px;
-    border-style: solid;
-    padding: 2px;
-    float: left;
-    margin: 2px;
-  }
 
-  .letter-button-color {
-    color: darkcyan;
-  }
+* {
+   box-sizing: border-box;
+         
+      }
+/** 
+    * body style
+**/
 
-  .fridge-color {
-    color: orange;
-  }
 
-  #display {
-    margin-top: 78px;
-    height: 500px;
-    width: 220px;
-    margin-left: 60px;
-  }
+body {
+    font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+    color: #777777;
+    background-image: url("../images/collector1.png");
+    border: #dddddd;
+    width: 1020px; 
+    margin: auto;
+  
+        }
 
-  #buttons {
-    padding-top: 60px;
-  }
 
-  #clear {
-    margin-left: 20px;
-    font-size: 25px;
-    color: black;
-    border-style: solid;
-    width: 100px;
-  }
-</style>
+/** 
+    * Main header style
+**/
+
+#mainheader {
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    font-size: 100px;
+    text-align: center;
+    color:rgba(255, 0, 0, 0.863);
+    text-shadow: 15px 15px 20px rgba(0, 0, 0, 0.753);
+    margin-top: 0px;
+       }
+
+/** header image style **/ 
+#headimg {
+     display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.row {
+    color: maroon;
+    font-size: 15px;
+}
+.card {
+  font-size: 15px;
+  color: rgba(255, 0, 64, 0.699);
+}
