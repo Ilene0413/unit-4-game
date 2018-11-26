@@ -15,7 +15,7 @@
 body {
     font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
     color: #777777;
-    background-image: url("../images/collector1.png");
+    background-image: url("../images/collector-background.png");
     border: #dddddd;
     width: 1020px; 
     margin: auto;
@@ -38,16 +38,23 @@ body {
 
 /** header image style **/ 
 #headimg {
-     display: block;
+    display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
 }
 .row {
-    color: maroon;
+    color: white;
     font-size: 15px;
 }
-.card {
+.card-body {
   font-size: 15px;
-  color: rgba(255, 0, 64, 0.699);
+  color: rgba(255, 0, 13, 0.699);
+  opacity: unset;
+  
+}
+.crystalClass {
+    background: none;
+    backdrop-filter: 0; 
+    
 }
