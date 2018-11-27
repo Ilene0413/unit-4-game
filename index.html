@@ -19,73 +19,54 @@
         <img id="headimg" src="assets/images/header gemstones.jpg" alt="crystals">
     </div>
     <br> <br>
-    <!-- user directions-->
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
-<!--                <div class="card text-primary bg-transparent border-primary" style="width: 800px"> -->
-                        <div class="card text-primary bg-transparent border-primary">
+            <!-- user directions-->
 
-                    <!--  <div class="card-body text-primary"> 
-                <div class="row"> -->
-                    <p>You will be given a random number at the start of the game.</p>
-                    <!--     </div>
-                <div class="row"> -->
-                    <p>There are four crystals below. By clicking on a crystal you will add a specific
-                        amount
-                        of points to your total score.</p>
-                    <!--    </div> 
-                <div class="row"> -->
-                    <p>You will win the game by matching your total score to a random number.
-                        You lose the game if your total score goes above the random number.
-                    </p>
-                    <!--   </div>
-                <div class="row"> -->
-                    <p>The value of each crystal is hidden from you until you
-                        click on it.
-                    </p>
-                    <!--   </div>
-                   <div class="row"> -->
-                    <p>Each time when the game starts, the game will change
-                        the values of each crystal.
-                    </p>
+            <div class="col-md-6">
+                <div id="cardPara" class="card bg-transparent border-primary">
+                    <div class="card-body">
+                        <p>You will be given a random number at the start of the game.</p>
+                        <p>There are four crystals below. By clicking on a crystal you will add a specific
+                            amount of points to your total score.</p>
+                        <p>You will win the game by matching your total score to a random number.
+                            You lose the game if your total score goes above the random number.
+                        </p>
+                        <p>The value of each crystal is hidden from you until you
+                            click on it.
+                        </p>
+                        <p>Each time when the game starts, the game will change
+                            the values of each crystal.
+                        </p>
+                    </div>
                 </div>
             </div>
-            <!--   </div>
-        <br><br> -->
+            <!-- random number, wins, losses -->
             <div class="col-md-6">
-                <div class="card text-primary border-primary bg-transparent">
-                    <!-- <div class="card-body"> -->
-                    <!--    <div class="col-md-6"> -->
-                    <p id="matchRandomNumber"></p>
-                    <!--   <div class="col-md-6"> -->
-                    <p id="numWins"></p>
-                    <p id="numLosses"></p>
-                    <!--  </div> -->
-                    <!--</div> -->
-                    <!--    </div> -->
-                    <!--      </div> -->
+                <div id="randomWinLoss" class="card border-primary bg-transparent">
+                    <div class="card-body">
+                        <p id="matchRandomNumber"></p>
+                        <p id="numWins"></p>
+                        <p id="numLosses"></p>
+                        <p id="playerScore" class="playerSc"></p>
+                    </div>
                 </div>
             </div>
         </div>
-            <br><br>
-            <div class="row">
-                <div class="card" style="width: 805px">
-                    <div id="crystals"></div>
-                </div>
-            </div>
-            <br><br>
-            <div class="row">
-                <p id="playerScore"></p>
-
+        <br><br>
+        <!-- row of crystals -->
+        <div class="row">
+            <div class="card" style="width: 1005px">
+                <div id="crystals"></div>
             </div>
         </div>
+    </div>
 
-        <!-- play game -->
+    <!-- play game -->
 
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="assets/javascript/game.js"> </script>
-        <!--<script=type="text/javascript">-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"> </script>
+    <!--<script=type="text/javascript">-->
 </body>
 
 </html>
