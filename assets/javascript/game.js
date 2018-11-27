@@ -38,7 +38,8 @@ $(document).ready(function () {
                 alert("You Lose:  " + playerScore);
                 numLoss++;
             }
-            startGame();
+            setTimeout(function(){ startGame(); }, 5000);
+
         }
     });
 
@@ -65,7 +66,6 @@ $(document).ready(function () {
             crystalBtn.attr("src", buttonPicture);
             $(".crystal-button-image").css("width", 200);
             $(".crystal-button-image").css("height", 200);
- //           $(".crystal-button-image").css("opacity", 0.5);
 
             // display crystals    
             $("#crystals").append(crystalBtn);
