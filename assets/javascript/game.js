@@ -21,8 +21,6 @@ $(document).ready(function () {
         crystalValue = $(this).attr("data-crystal");
         crystalValue = parseInt(crystalValue);
         playerScore = playerScore + crystalValue;
-        //       $("#playerScore").text("Your Score:  " + playerScore);
-        //$("#playerScore").text(" " + playerScore);
         $("#playerScore").text("Your Score: " + playerScore);
         if (playerScore < randomNumber) {
             return;
@@ -38,7 +36,7 @@ $(document).ready(function () {
                 alert("You Lose:  " + playerScore);
                 numLoss++;
             }
-            setTimeout(function(){ startGame(); }, 1000);
+            setTimeout(function () { startGame(); }, 1000);
 
         }
     });

@@ -44,12 +44,14 @@ body {
     margin-top: 50px;
     width: 50%;
 }
-
+/** directions style **/
 #cardPara {
     font-size: 20px;
     color: darkblue;
     border-width: 2px;
 }
+
+/** score tracking styles **/
 
 #randomWinLoss {
     font-size: 30px;
