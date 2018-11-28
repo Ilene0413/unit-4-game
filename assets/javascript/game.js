@@ -12,6 +12,7 @@ $(document).ready(function () {
     let buttonFile = "assets/images/";
     let buttonPicture;
     let buttonImg;
+    let crystalArray = [];
 
     startGame();
     $("#crystals").on("click", ".crystal-button", function () {
@@ -54,17 +55,30 @@ $(document).ready(function () {
         //players score is set to 0
         playerScore = 0;
 
-        // Assign random numbers to crystals
-        for (var i = 0; i < numCrystals; i++) {
+        //initialize array that holds crystal values
+        for (var i=0; i < numCrystals; i++) {
+            crystalArray [i] = "0";
+        }
+
+        // Assign random numbers to crystals, each crystal should have a unique random number
+        for (i = 0; i < numCrystals; i++) {
             let crystalBtn = $("<img>");
             crystalBtn.addClass("crystal-button crystal crystal-button-image");
             crystalValue = Math.floor(Math.random() * 12 + 1);
-            crystalBtn.attr("data-crystal", crystalValue);
             buttonPicture = buttonFile + crystalImages[i] + (".jpg");
             crystalBtn.attr("src", buttonPicture);
             $(".crystal-button-image").css("width", 250);
             $(".crystal-button-image").css("height", 250);
 
+            //check to ensure each crystal has a different random number
+            let numInCrystal = crystalArray.includes(crystalValue);
+            while (numInCrystal) {
+                crystalValue = Math.floor(Math.random() * 12 + 1);
+                numInCrystal = crystalArray.includes(crystalValue);
+
+            }
+            crystalBtn.attr("data-crystal", crystalValue);
+            crystalArray[i] = crystalValue;
             // display crystals    
             $("#crystals").append(crystalBtn);
         }
@@ -74,5 +88,7 @@ $(document).ready(function () {
         $("#numLosses").append("Losses: " + numLoss);
         $("#playerScore").append("Your Score:  " + playerScore);
     }
+
+
 
 });
